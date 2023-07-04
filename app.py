@@ -7,7 +7,10 @@ import os
 from tensorflow.keras.models import load_model as tfk__load_model
 
 st.set_page_config(layout="wide",page_title="Intel Image Classification")
-st.header("Intel Image Classification")
+#st.header("Intel Image Classification")
+def header(url):
+     st.markdown(f'<p style="background-color:#201434;color:#FF80E0;font-size:42px;border-radius:2%;font-weight:bold;">{url}</p>', unsafe_allow_html=True)
+header("Intel Image Classification")
 hide_st_style = """
 <style>
 MainMenu {visibility: hidden;}
