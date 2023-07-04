@@ -48,12 +48,12 @@ about_tab.write("In this project, transfer learning is used with the pre-trained
 about_tab.write("Obtained accuracy: 90.57%")
 about_tab.write("You can find the link of the dataset in the following link")
 about_tab.markdown("[Dataset](https://www.kaggle.com/datasets/puneet6060/intel-image-classification)")
-# about_tab.write("Link of GitHub repository:")
-# about_tab.markdown("[GitHub Repo](https://github.com/AbdelrahmanSabriAly/Potato_disease_classification.git)")
+about_tab.write("Link of GitHub repository:")
+about_tab.markdown("[GitHub Repo](https://github.com/AbdelrahmanSabriAly/Intel_image_classification.git)")
 
 
 # --------------------------------------- App tab ---------------------------------------------- #
-file = app_tab.file_uploader("Please upload an image of a potato leaf",type=["jpg","png","jpeg","bmp"])
+file = app_tab.file_uploader("Please upload an image of one of the six categories",type=["jpg","png","jpeg","bmp"])
 if file is None:
     app_tab.text("Please upload an image file")
 else:
